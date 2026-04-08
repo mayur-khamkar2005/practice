@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg: #eef2f7;
+  --surface: #ffffff;
+  --line: rgba(22, 33, 62, 0.08);
+  --text: #405063;
+  --text-strong: #16213e;
+  --muted: #66758a;
+  --accent: #f2702f;
+  --success: #14804a;
+  --info: #1877f2;
+  --danger: #d14343;
+  --shadow-soft: 0 22px 45px rgba(19, 32, 57, 0.08);
+  --font-body: 'DM Sans', 'Segoe UI', sans-serif;
+  --font-display: 'Space Grotesk', 'Trebuchet MS', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, monospace;
+  color: var(--text);
+  font: 18px/1.55 var(--font-body);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  margin: 0;
+  color: var(--text-strong);
+  font-family: var(--font-display);
+  line-height: 1.08;
+}
+
+h2 {
+  font-size: clamp(1.45rem, 2vw, 2rem);
+}
+
+p {
+  margin: 0;
+}
+
+strong {
+  color: var(--text-strong);
+}
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 16px;
+  }
+}
