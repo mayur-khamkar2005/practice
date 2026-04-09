@@ -11,15 +11,15 @@ const Navbar = () => {
         </Link>
         <Link
           className="cursor-pointer border border-black rounded px-3 py-1 hover:bg-yellow-50 transition"
-          to="/contact"
-        >
-          Contact
-        </Link>
-        <Link
-          className="cursor-pointer border border-black rounded px-3 py-1 hover:bg-yellow-50 transition"
           to="/projects"
         >
           Projects
+        </Link>
+        <Link
+          className="cursor-pointer border border-black rounded px-3 py-1 hover:bg-yellow-50 transition"
+          to="/contact"
+        >
+          Contact
         </Link>
       </div>
     </div>
